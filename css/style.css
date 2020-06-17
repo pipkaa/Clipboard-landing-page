@@ -10,20 +10,21 @@
     --light-blue: hsl(233, 100%, 69%);
     --shadow-blue: hsl(233, 75%, 45%);
     --dark-grayish-blue: hsl(210, 10%, 33%);
-    --grayish-blue: hsl(220, 1%, 97%);
+    --grayish-blue: hsl(201, 11%, 66%);
 }
 
 body {
     font-family: 'Bai Jamjuree', Helvetica, sans-serif;
     text-align: center;
     color: var(--dark-grayish-blue);
+    margin: 0;
 }
 
 header {
     background-image: url('../images/bg-header-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 90px 0 0;
+    padding: 90px 0 20px;
 }
 
 img {
@@ -31,6 +32,7 @@ img {
 }
 
 p {
+    color: var(--grayish-blue);
     line-height: 1.5;
 }
 
@@ -42,6 +44,7 @@ section {
     max-width: 100%;
     width: 1200px;
     margin: 40px auto;
+    padding: 0 20px;
 }
 
 .container-small {
@@ -53,11 +56,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .flex > * {
     flex: 1;
     padding: 15px;
+}
+
+.m4 {
+    margin: 100px auto;
 }
 
 .btn {
@@ -82,7 +90,7 @@ section {
 }
 
 footer {
-    background-color: var(--grayish-blue);
+    background-color: hsl(0, 0%, 93%)
 }
 
 footer img {
@@ -122,4 +130,20 @@ footer .social a {
 
 footer .container {
     margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    footer .links {
+        flex-direction: column;
+    }
+
+    footer .links li {
+        margin-right: 0;
+        padding: 10px;
+    }
 }
