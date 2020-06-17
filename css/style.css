@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --shadow-cyan: hsl(171, 59%, 30%);
+    --light-blue: hsl(233, 100%, 69%);
+    --shadow-blue: hsl(233, 75%, 45%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(220, 1%, 97%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', Helvetica, sans-serif;
+    text-align: center;
+    color: var(--dark-grayish-blue);
+}
+
+header {
+    background-image: url('../images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 100%;
+    width: 1200px;
+    margin: 40px auto;
+}
+
+.container-small {
+    width: 640px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex > * {
+    flex: 1;
+    padding: 15px;
+}
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-family: 'Bai Jamjuree', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 15px 5px;
+}
+
+.btn-ios {
+    background-color: var(--strong-cyan);
+    box-shadow: 0 3px var(--shadow-cyan);
+}
+
+.btn-mac {
+    background-color: var(--light-blue);
+    box-shadow: 0 3px var(--shadow-blue);
+}
+
+footer {
+    background-color: var(--grayish-blue);
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+}
+
+footer .links {
+    flex: 3;
+}
+
+footer .links li {
+    margin-right: 40px;
+    padding: 10px;
+}
+
+footer .social li {
+    margin-right: 10px;
+}
+
+footer .social a {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer .container {
+    margin-bottom: 0;
+}
